@@ -1,0 +1,9 @@
+obj
+.vs
+.git
+Library
+*.sln
+*.csproj
+*.csproj.user
+*.meta
+Temp
