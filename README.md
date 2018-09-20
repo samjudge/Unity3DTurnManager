@@ -42,7 +42,7 @@ In order to progress through each turn stage, each game object in the Turn must 
 Signals are sent to the TurnManager in the behaviour scripts, via the GameManager singleton reference
 
 ```csharp
-//Where the TurnEventHandler is injected via the inspector, (or accessed via GetComponent<T>())
+//Where the TurnEventHandler (of type OnTurnEventHandler) is injected via the inspector, (or accessed via GetComponent<T>())
 TurnEventHandler.OnTurnStart.AddListener(delegate(TurnEventData data){
   Debug.Log("player turn start!");
   GameManager.GetInstance().TurnManager.GetCurrentTurn().Signals.SendSignal(this.gameObject, (int) TurnSignals.Done);
